@@ -1,140 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 
- 
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/images/favicon.png">
+    <link rel="stylesheet" href="./src/styles/light.css" id="style">
     <title>EggSurvival服务器 - 公益生存服 丨 Minecraft服务器</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="static/css/nutscraft.css">
-    <link rel="stylesheet" type="text/css" href="static/css/font.css">
-    <link rel="stylesheet" type="text/css" href="static/css/viewer.min.css">
-    <link rel="icon" href="https://n0ts.gitee.io/cdn/nutscraft/favicon.ico">
 </head>
 
 <body>
-    <!-- 首页标题（不是哥们，偷看元素呢） -->
-    <div class="nutscraftBox Box1">
-        <div class="wow Box1-title">
-            <p class="wow Box1-title1">Hello Minecraft.</p>
-            <p class="wow Box1-title2">EggSurvival Server<p>
-            <p class="wow Box1-title2">不忘初心，方得始终</p>
-            <a href="#anchor1" scrollto="anchor1" class="wow scrollOnClick Box1-title-Buttom" easing="smooth">More...</a>
-        </div>
-    </div>
-
-    <header class="s-header" >
-
-            <div class="s-header__logo" >
-                <a class="logo" href="https://www.minebbs.com/threads/1-20-1-1-21-eggsurvival.28969/" >
-                    <img src="static/image/logo.png" style="width: 90vw; height: auto" alt="Homepage">
-                </a>
+    <div id="welcome">
+        <img src="./src/images/backgrounds/main_background.png" alt="background" id="background" />
+        <div id="content_box">
+            <img src="./src/images/OV_PMP_GameModeCarousel_Frame_Slide1_Desktop1.png" alt="frame" id="frame" />
+            <div id="text">
+                <h1>让我们在<img src="./src/images/logo/logo.border.white.png" alt="logo">里一起游玩！</h1>
+                <p>
+                    EggSurvival是一个公益性质的Minecraft纯生存服务器，创立于2021年12月26日，由IceXaga和XianDHP共同运营维护。在这里，你可以欣赏到美丽的樱花，乘上观光环线，欣赏出生点樱花雪山盆地的壮丽景观，也可以欣赏到位于出生点盆地之外宽广无际的草原与森林。在这里，你可以尽情体验纯生存与壮丽景色相融合的奇特体验，也可以与其他玩家一起伐木、下矿、打怪、建造庇护所......在EggSurvival，只有你想不到，没有做不到！EggSurvival欢迎各位玩家的到来！
+                </p>
+                <button class="next" link-to="#anchor_one">Next</button>
             </div>
-
-    <!-- 特色介绍（不是哥们，偷看元素呢）  -->
-    <div class="nutscraftBox Box2">
-        <div id="anchor1"></div>
-        <div class="Box2-nutscraft">
-            <ul>
-                <li class="wow OutRight">
-                    <img src="static/picture/server.png" alt="server">
-                    <h2>流畅体验</h2>
-                    <p>6100+16GRAM</p>
-                </li>
-                <li class="wow OutTop">
-                    <img src="static/picture/friend.png" alt="server">
-                    <h2>环境温馨</h2>
-                    <p>本服的初衷就是和谐温馨，友好的小型公益服，本服即使你的财产不保护，也没有玩家会来盗取哦</p>
-                </li>
-                <li class="wow OutTop">
-                    <img src="static/picture/nan.png" alt="server">
-                    <h2>公平公正</h2>
-                    <p>本服为公益服，只接受无条件赞助，任何玩家都是平等的，让玩家享受最公平的游戏环境</p>
-                </li>
-                <li class="wow OutLeft">
-                    <img src="static/picture/backup.png" alt="server">
-                    <h2>数据安全</h2>
-                    <p>服务器每周都会自动备份，并且安装有回档插件保驾护航，基本保障了玩家不会造成一切损失</p>
-                </li>
-            </ul>
-            <a href="#anchor2" scrollto="anchor2" class="scrollOnClick Box2-More wow" easing="smooth">Next...</a>
         </div>
     </div>
-
-
-    <!-- 一些话（不是哥们，偷看元素呢）  -->
-    <div class="nutscraftBox Box3">
-        <div id="anchor2"></div>
-        <div class="Box3-talk OutBottom wow">
-            <div class="Box3-talk-text">
-                <h1><del style="color: red;"><span style="color: black;">鸽子</span></del>服主的一些话</h1>
-                <p>服务器起步于2021年12月26日，用IceXaga和我对这款游戏的热爱来维护整个服务器运营直到今日<p>
-                <p>一路的过程中经历了许多大大小小的挫折，学到了许多，同时也失去了太多；几次对服务器做出重大抉择，渐渐地似乎违背了一些初心，答应玩家的却没做到，这，的确做的不好。</p>
+    <div class="part" id="anchor_one">
+        <div id="learn_more">
+            <h1><img src="./src/images/logo/logo.border.white.png" alt="logo">EggSurvival四大亮点</h1>
+            <div class="card-group">
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon">
+                        <path fill="#FFF"
+                            d="M64 32C28.7 32 0 60.7 0 96l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 32zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64l0 64c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-64c0-35.3-28.7-64-64-64L64 288zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                    </svg>
+                    <h1 class="title">流畅的体验</h1>
+                    <p class="content">EggSurvival服务器使用16GB内存，这意味着服务器将会有更稳定的运行状态和更流畅的体验！快来EggSurvival
+                        Server，即刻体验16GB服务器给您带来的前所未有的流畅感和稳定感吧！！！</p>
+                </div>
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 640 512">
+                        <path
+                            d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"
+                            fill="#FFF" />
+                    </svg>
+                    <h1 class="title">温馨的环境</h1>
+                    <p class="content">本服的初衷就是和谐温馨，友好的小型公益服，本服即使你的财产不保护，也没有玩家会来盗取哦</p>
+                </div>
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M289.8 46.8c3.7-9 12.5-14.8 22.2-14.8l112 0c13.3 0 24 10.7 24 24l0 112c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-33.4-33.4L321 204.2c19.5 28.4 31 62.7 31 99.8c0 97.2-78.8 176-176 176S0 401.2 0 304s78.8-176 176-176c37 0 71.4 11.4 99.8 31l52.6-52.6L295 73c-6.9-6.9-8.9-17.2-5.2-26.2zM400 80s0 0 0 0s0 0 0 0s0 0 0 0zM176 416a112 112 0 1 0 0-224 112 112 0 1 0 0 224z"
+                            fill="#FFF" />
+                    </svg>
+                    <h1 class="title">公平与公正</h1>
+                    <p class="content">本服为公益服，只接受无条件赞助，任何玩家都是平等的，让玩家享受最公平的游戏环境</p>
+                </div>
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 512 512">
+                        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0z"
+                            fill="#FFF" />
+                    </svg>
+                    <h1 class="title">安全的数据</h1>
+                    <p class="content">服务器每周都会自动备份，并且安装有回档插件保驾护航，基本保障了玩家不会造成一切损失</p>
+                </div>
+            </div>
+        </div>
+        <button class="next" link-to="#anchor_two">Next</button>
+    </div>
+    <div class="part" id="anchor_two">
+        <div id="server_op_list">
+            <h1 class="title">服务器管理员列表</h1>
+            <div class="op_card_group">
+                <div class="op_card">
+                    <img src="./src/images/avatars/XianDHP.png" alt="XianDHP's Avatar" />
+                    <h2 class="name">XianDHP</h2>
+                    <!-- <p class="job">服主、服务器维护者</p> -->
+                </div>
+                <div class="op_card" link-to="https://icexaga.github.io">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path fill="black"
+                            d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                    </svg>
+                    <img src="./src/images/avatars/IceXaga.png" alt="IceXaga's Avatar" />
+                    <h2 class="name">IceXaga</h2>
+                    <!-- <p class="job">联合创始人、地图提供者、官网制作者</p> -->
+                </div>
+                <div class="op_card">
+                    <img src="./src/images/avatars/SkeletalAunt477.png" alt="MuGao's Avatar" />
+                    <h2 class="name">SkeletalAunt477</h2>
+                    <!-- <p class="job">顶尖玩家、官网制作者</p> -->
+                </div>
+                <div class="op_card">
+                    <img src="./src/images/avatars/ItzL1ttleTan.png" alt="ItzL1ttleTan's Avatar" />
+                    <h2 class="name">ItzL1ttleTan</h2>
+                    <!-- <p class="job">服务器维护者、特级玩家</p> -->
+                </div>
+            </div>
+        </div>
+        <button class="next" link-to="#anchor_three">Next</button>
+    </div>
+    <div class="part" id="anchor_three">
+        <div id="XianDHP_saying">
+            <h1 class="title">
+                <img src="./src/images/avatars/XianDHP_avatar.jpg" alt="XianDHP_avatar">服主有话说
+            </h1>
+            <div class="content">
+                <p>服务器起步于2021年12月28日，用IceXaga和我对这款游戏的热爱来维护整个服务器运营直到今日</p>
+                <p>
+                    一路的过程中经历了许多大大小小的挫折，学到了许多，同时也失去了太多；几次对服务器做出重大抉择，渐渐地似乎违背了一些初心，答应玩家的却没做到，这，的确做的不好。</p>
                 <p>2024，回归初心，对服务器进行更好的调整与改变，并保持初心长期运营，尽自己最大的努力去维护好这个小小的环境</p>
                 <p>感谢各位玩家的一路陪伴~</p>
-                <h2 class="Box3-talk-text-end">不忘初心，方得始终</h2>
             </div>
         </div>
-        <a href="#anchor3" scrollto="anchor3" class="scrollOnClick Box3-More wow" easing="smooth">Next...</a>
+        <button class="next" link-to="#anchor_four">Next</button>
     </div>
-
-    <!-- 风景展示（不是哥们，偷看元素呢）  -->
-    <div class="nutscraftBox Box4">
-        <div id="anchor3"></div>
-        <p class="Box4-Title OutBottom wow">风景一览</p>
-        <ul id="nutscraft">
-            <li>
-                <img src="static/picture/zc1.png1" alt="player1" class="OutTop wow">
-            </li>
-            <li>
-                <img src="static/picture/zc2.png1" alt="player2" class="OutBottom wow">
-            </li>
-            <li>
-                <img src="static/picture/zc3.png1" alt="player3" class="OutLeft wow">
-            </li>
-            <li>
-                <img src="static/picture/qyzp.png1" alt="player4" class="OutRight wow">
-            </li>
-        </ul>
-        <a href="#anchor4" scrollto="anchor4" class="scrollOnClick Box4-More wow" easing="smooth">Next...</a>
-    </div>
-
-    <!-- 加入我们（不是哥们，偷看元素呢）  -->
-    <div class="nutscraftBox Box5">
-        <div id="anchor4"></div>
-        <div class="Box5-Join OutBottom wow">
-            <div class="Box5-Join-talk">
-                <h1>加入我们？</h1>
-                <p>IP:mc.ess.icu:32360</p>
-                <p>使用java或be1.21.1以上的客户端即可进入！</p>
-                <ul>
-                    <li><a href="https://qm.qq.com/q/nppQnTpuZU"javascript:;">QQ群:438338988</a></li>
-                    <li><a href="https://afdian.com/a/EggSurvivalServer":;">捐赠我们</a></li>
-                    <li><a href="https://icexaga.github.io/posts/eggsurvival_server/":;">about</a></li>
-                    
-                </ul>
+    <div class="part" id="anchor_four">
+        <div id="join_us">
+            <h1 class="title">加入我们</h1>
+            <div id="card_group">
+                <div id="java_card">
+                    <h2 class="title">
+                        <img src="./src/images/mc_icons/java_icon.png" alt="java_icon" />Java版
+                    </h2>
+                    <div class="content_box">
+                        <div class="content">
+                            <p class="minecraft_text">服务器名称</p>
+                            <p class="minecraft_input_box">EggSurvival</p>
+                            <p class="minecraft_text">服务器地址</p>
+                            <p class="minecraft_input_box">mc.ess.icu:32360</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="bedrock_card">
+                    <h2 class="title">
+                        <img src="./src/images/mc_icons/bedrock_icon.png" alt="java_icon" />基岩版
+                    </h2>
+                    <div class="content_box">
+                        <div class="background_color"></div>
+                        <div class="content">
+                            <p class="minecraft_text">服务器地址</p>
+                            <p class="minecraft_input_box">mc.ess.icu</p>
+                            <p class="minecraft_text">端口</p>
+                            <p class="minecraft_input_box">15316</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="trd_link_group">
+                <span class="trd_link" link-to="https://qm.qq.com/q/nppQnTpuZU">
+                    在
+                    <img src="./src/images/third_link_icons/qq.png" alt="qq" />
+                    与我们一起交流
+                </span>
+                <span class="trd_link" link-to="https://afdian.com/a/EggSurvivalServer">
+                    从
+                    <img src="./src/images/third_link_icons/afdian.png" alt="qq" />
+                    赞助我们
+                </span>
+                <span class="trd_link" link-to="https://icexaga.github.io/posts/eggsurvival_server/">
+                    博客文档
+                </span>
             </div>
         </div>
-
-        <!-- 页脚（原神怎么你了） -->
-        <div class="footer">
-            <p>&copy; 2023-2024<a href="javascript:;">EggSurvival</a></p>
-            <p><a href="javascript:;">by XianDHP</a></p>
-            <li><a href="https://afdian.com/a/EggSurvivalServer":;">捐赠我们</a></li>
-            <li><a href="static/JZMD.html":;">捐赠名单</a></li>
+    </div>
+    <div id="page_over">
+        <div class="left">
+            <img src="./src/images/logo/logo.border.white.png" alt="logo" />
+        </div>
+        <div class="right">
+            <p>© 2023-2024 EggSurvival</p>
+            <p>by XianDHP</p>
         </div>
     </div>
+    <div id="hover">
+        <div class="content_box">
+            <div class="content">
+                需要1.21以及更高版本
+            </div>
+        </div>
+    </div>
+    <div class="hover_switcher" link-to="#">
 
-    <script type="text/javascript" src="static/js/time.js"></script>
-    <script type="text/javascript" src="static/js/smoothScroll-ES5.js"></script>
-    <script src="static/js/jquery.js"></script>
-    <script type="text/javascript" src="static/js/wow.min.js"></script>
-    <script type="text/javascript" src="static/js/viewer.min.js" ></script>
+    </div>
 </body>
+
+<script src="./src/scripts/index.js"></script>
 
 </html>

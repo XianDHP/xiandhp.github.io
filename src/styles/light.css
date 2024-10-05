@@ -1,0 +1,355 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Microsoft YaHei";
+    src: url("../fonts/Microsoft_YaHei.ttf");
+}
+body {
+    margin: 0;
+    font-family: 'Microsoft YaHei', serif;
+    scroll-behavior: smooth;
+    transition: 0.4s all;
+}
+
+#welcome #background{
+    width: 900px;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    top: -250px;
+}
+#welcome #frame {
+    height: 670px;
+}
+#welcome #content_box {
+    display: flex;
+    flex-direction: row;
+}
+#welcome #content_box #text {
+    background-color: #0b0b0b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 900px);
+    height: 630px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding-top: 40px;
+    padding-right: 40px;
+    right: 0;
+}
+#welcome #content_box #text h1{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#welcome #content_box #text h1 img{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 32px;
+}
+#welcome #content_box #text p{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+#learn_more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#learn_more h1 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#learn_more h1 img {
+    margin-right: 5px;
+    height: 32px;
+}
+.card-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    box-shadow: 3px 3px 10px grey;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 40px;
+    transition: 0.2s all;
+}
+.card .icon {
+    height: 50px;
+}
+.card .title {
+    margin: 5px;
+}
+.card .content {
+    margin: 5px;
+}
+.card:hover {
+    box-shadow: 3px 3px 30px grey;
+}
+.card .icon path{
+    fill: #000;
+}
+
+#XianDHP_saying {
+    width: 60vw;
+    transition: 0.2s all;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 10px;
+    padding: 20px;
+}
+#XianDHP_saying .title {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#XianDHP_saying .title img{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#XianDHP_saying .content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    font-size: large;
+}
+#XianDHP_saying:hover {
+    box-shadow: 1px 1px 30px grey;
+}
+#join_us {
+    margin-top: 60px;
+}
+#join_us .title {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#join_us .title img {
+    height: 32px;
+    margin-right: 5px;
+}
+@font-face {
+    font-family: 'Unifont';
+    src: url('../fonts/unifont-16.0.01.otf');
+}
+@font-face {
+    font-family: 'Mojangles';
+    src: url('../fonts/mojangles.ttf');
+}
+#join_us #card_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#join_us #card_group #java_card .content_box {
+    background-image: url("../images/backgrounds/dirt_background.png");
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+}
+#join_us #card_group #java_card .content_box .content .minecraft_text {
+    font-family: "Unifont", serif;
+}
+#join_us #card_group #java_card .content_box .content .minecraft_input_box {
+    padding: 10px;
+    background-color: #000000;
+    border: 2px solid #A4A5A8FF;
+    font-family: "Mojangles", serif;
+    width: 400px;
+}
+#join_us #card_group #bedrock_card .content_box {
+    background-image: url("../images/backgrounds/bedrock_background.png");
+    background-size: cover;
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+}
+#join_us #card_group #bedrock_card .content_box .background_color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#join_us #card_group #bedrock_card .content_box .content {
+    position: relative;
+    z-index: 5;
+    color: white;
+}
+#join_us #card_group #bedrock_card .content_box .content .minecraft_text {
+    font-family: "Unifont", serif;
+}
+#join_us #card_group #bedrock_card .content_box .content .minecraft_input_box {
+    padding: 10px;
+    background-color: #5e5e5e;
+    border-bottom: 2px solid #a2a2a0;
+    border-top: 2px solid #474745;
+    font-family: "Mojangles", serif;
+    width: 400px;
+}
+#hover {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    border-radius: 2px;
+    background-color: rgba(18, 3, 18, 0.9);
+    font-family: Unifont, serif;
+    color: white;
+}
+#hover .content_box {
+    border-radius: 2px;
+    border: 2px solid rgb(44, 7, 105);
+    padding: 2px;
+}
+#hover .content_box .content {
+    padding: 5px;
+}
+#trd_link_group {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.trd_link {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    box-shadow: 1px 1px 10px 0 #a3a3a3;
+    transition: 0.2s all;
+}
+.trd_link:hover {
+    box-shadow: 1px 1px 20px 0 #a3a3a3;
+}
+.trd_link img {
+    border-radius: 5px;
+    height: 20px;
+}
+#page_over {
+    margin-top: 60px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+#page_over .left img {
+    height: 100px;
+}
+#page_over .right p{
+    margin: 5px;
+    font-size: larger;
+}
+#server_op_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+#server_op_list .title {
+    margin: 5px;
+}
+#server_op_list .op_card_group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#server_op_list .op_card_group .op_card {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    width: 240px;
+    transition: 0.2s all;
+    box-shadow: 3px 3px 10px grey;
+}
+#server_op_list .op_card_group .op_card:hover {
+    box-shadow: 3px 3px 30px grey;
+}
+#server_op_list .op_card_group .op_card:hover img {
+    filter: drop-shadow(0 0 20px grey);
+}
+#server_op_list .op_card_group .op_card img {
+    width: 200px;
+    transition: 0.2s all;
+}
+#server_op_list .op_card_group .op_card .name {
+    margin: 5px;
+}
+#server_op_list .op_card_group .op_card .job {
+    margin: 5px;
+    font-size: 13px;
+}
+#server_op_list .op_card_group .op_card svg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+}
+.part {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.next {
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px grey;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+}
+.hover_switcher {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 25px;
+    background-color: white;
+}
+.hover_switcher svg {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
