@@ -13,7 +13,7 @@ function child_add(element) {
 child_add(document);
 document.getElementById("java_card").children.item(1).onmouseover = (ev) => {
     let hover = document.getElementById("hover");
-    hover.style.display = "block";
+    if (hover.style.display !== "block") hover.style.display = "block";
     hover.style.top = ev.pageY + "px";
     hover.style.left = ev.pageX + "px";
 }
@@ -23,7 +23,7 @@ document.getElementById("java_card").children.item(1).onmouseout = (ev) => {
 }
 document.getElementById("bedrock_card").children.item(1).onmouseover = (ev) => {
     let hover = document.getElementById("hover");
-    hover.style.display = "block";
+    if (hover.style.display !== "block") hover.style.display = "block";
     hover.style.top = ev.pageY + "px";
     hover.style.left = ev.pageX + "px";
 }

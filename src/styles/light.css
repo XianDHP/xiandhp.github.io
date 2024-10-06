@@ -103,10 +103,15 @@ body {
 .card:hover {
     box-shadow: 3px 3px 30px grey;
 }
+.card .icon {
+    transition: 0.2s all;
+}
 .card .icon path{
     fill: #000;
 }
-
+.card:hover .icon {
+    filter: drop-shadow(0 0 20px grey);
+}
 #XianDHP_saying {
     width: 60vw;
     transition: 0.2s all;
@@ -214,8 +219,9 @@ body {
     display: none;
     position: absolute;
     z-index: 10;
+    padding: 0;
     border-radius: 2px;
-    background-color: rgba(18, 3, 18, 0.9);
+    background-color: rgba(18, 3, 18, 0.9) !important;
     font-family: Unifont, serif;
     color: white;
 }
@@ -337,8 +343,14 @@ body {
     width: 150px;
     height: 50px;
     margin-top: 20px;
+    transition: 0.2s all;
+    background-color: white;
+}
+.next:hover {
+    box-shadow: 1px 1px 20px grey;
 }
 .hover_switcher {
+    transition: 0.2s all;
     width: 50px;
     height: 50px;
     position: fixed;
@@ -349,7 +361,14 @@ body {
     background-color: white;
 }
 .hover_switcher svg {
+    transition: 0.2s all;
     width: 30px;
     height: 30px;
     margin: 10px;
+}
+.hover_switcher:hover svg {
+    filter: drop-shadow(0 0 20px grey);
+}
+.hover_switcher:hover {
+    box-shadow: 1px 1px 20px grey;
 }
